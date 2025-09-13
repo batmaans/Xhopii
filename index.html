@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Xhopee</title>
+</head>
+<body>
+    
+    <header>
+        <img src="img/logo.png">
+        <h1>Xhopii</h1>
+    </header>
+    <nav class="menu-horizontal">
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="cadastroCliente.php">Cadastro Cliente</a></li>
+            <li><a href="verCliente.php">Ver Clientes</a></li>
+        </ul>
+    </nav>
+    <div class="produto-imagem">
+        <div class="produto-miniatura">
+            <img src="img/produto1.png" onclick="selecionarImgProduto(this)">
+            <img src="img/produto2.png" onclick="selecionarImgProduto(this)">
+            <img src="img/produto3.png" onclick="selecionarImgProduto(this)">
+            <img src="img/produto4.png" onclick="selecionarImgProduto(this)">
+            <img src="img/produto5.png" onclick="selecionarImgProduto(this)">
+        </div>
+        <div class="produto-principal">
+            <img id="imgPrincipal" src="img/produto1.png">
+        </div>
+    </div>
+
+    <div class="produto-detalhes">
+        <h1>Camisa Desenvolvedor Front-End CSS</h1>
+        <h2 id="precoProduto">R$56,90</h2>
+        <p id="qtdDisponivel" >171 peças dísponíveis</p>
+        <p>Modelos:</p>
+        <button class="botao" id="btnModeloPreto" onclick="mudarPreco(this)">Preto</button>
+        <button class="botao" id="btnModeloAzul" onclick="mudarPreco(this)">Azul</button>
+        <button class="botao" id="btnModeloVerde" onclick="mudarPreco(this)">Verde</button>
+        <button class="botao" id="btnModeloCinza" onclick="mudarPreco(this)">Cinza</button>
+        <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
+
+        <p>Tamanhos:</p>
+        <button class="botao" id="btnTamanhoP">P</button>
+        <button class="botao" id="btnTamanhoM">M</button>
+        <button class="botao" id="btnTamanhoG">G</button>
+        <button class="botao" id="btnTamanhoGG">GG</button>
+        <p id="tamanhoSelecionado" >Tamanho Selecionado: P</p>
+        <button id="botaoComprar">Comprar Agora</button>
+    </div>
+</body>
+</html>
