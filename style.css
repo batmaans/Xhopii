@@ -13,6 +13,23 @@ header{
     width: 100%;
     background-color: rgb(251,86,48);
 }
+header.corsec{
+    height: 85px;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+}
+
+h2.corsec{
+    color: rgb(251,86,48);
+    font-size: 25px;
+    display: inline;
+
+}
+h2.corterc{
+    color: rgb(29, 29, 29);
+    font-size: 25px;
+    display: inline;
+}
 
 header h1{
     color: rgb(255, 255, 255);
@@ -110,6 +127,32 @@ header img{
 }
 
 .produto-detalhes #botaoComprar:hover{
+    opacity: 0.9;
+}
+
+.janRedSenha{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 90%;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid rgba(0,0,0,.09);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    align-items: center;
+}
+.botaoEnviar{
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+    background-color: rgb(251,86,48);
+    color: rgb(255,255,255);
+    border: 1px solid rgb(41, 41, 41);
+    margin: 10px 8px 8px 10px;
+    padding: 0.25rem 0.75rem;
+    justify-content: center;
+}
+
+.botaoEnviar:hover{
     opacity: 0.9;
 }
 
