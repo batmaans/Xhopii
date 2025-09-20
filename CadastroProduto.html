@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form action="/cadastrar" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="fabricante">Fabricante:</label><br>
+        <input type="text" id="fabricante" name="fabricante" required><br><br>
+
+        <label for="descrição">Descrição:</label><br>
+        <input type="text" id="descrição" name="descrição" required><br><br>
+
+        <label for="valor">Valor:</label><br>
+        <input type="text" id="valor" name="valor" required><br><br>
+
+        <label for="quantidade">Quantidade:</label><br>
+        <input type="text" id="quantidade" name="quantidade" required><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <p>Selecione a foto do produto:</p>
+    <button>Escolher um arquivo</button> <p>Nenhum arquivo escolhido</p>
+    <button>Cadastrar</button>
+
+</body>
+</html>

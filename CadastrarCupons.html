@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cupons de Desconto</title>
+</head>
+<body>
+    <h1>Cadastro de Cupons de Desconto</h1>
+    <form action="/cadastrar-cupom" method="post">
+        <label for="codigo">Código do Cupom:</label><br>
+        <input type="text" id="codigo" name="codigo" required><br><br>
+
+        <label for="descricao">Descrição:</label><br>
+        <input type="text" id="descricao" name="descricao"><br><br>
+
+        <label for="desconto">Percentual de Desconto (%):</label><br>
+        <input type="number" id="desconto" name="desconto" min="0" max="100" required><br><br>
+
+        <label for="valor_minimo">Valor Mínimo de Compra (R$):</label><br>
+        <input type="number" id="valor_minimo" name="valor_minimo" min="0" step="0.01" required><br><br>
+
+        <label for="validade">Data de Validade:</label><br>
+        <input type="date" id="validade" name="validade" required><br><br>
+
+        <input type="submit" value="Cadastrar Cupom">
+    </form>
+</body>
+</html>
