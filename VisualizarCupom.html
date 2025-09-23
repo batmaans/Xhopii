@@ -5,7 +5,29 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title>Cadastro de Clientes</title>
+    <title>Tabela de Cupons</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
 </head>
 <body>
 
@@ -25,36 +47,63 @@
         </ul>
     </nav>
 
-    <h1>Cadastro de Clientes</h1>
-    <form action="/cadastrar" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
-
-        <label for="sobrenome">Sobrenome:</label><br>
-        <input type="text" id="sobrenome" name="sobrenome" required><br><br>
-
-        <label for="CPF">CPF:</label><br>
-        <input type="text" id="CPF" name="CPF" required><br><br>
-
-        <label for="data_nascimento">Data de Nascimento:</label><br>
-        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
-
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" required><br><br>
-
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="senha">Senha:</label><br>
-        <input type="password" id="senha" name="senha" required><br><br>
-
-        <input type="submit" value="Cadastrar">
-    </form>
-
-    <p>Selecione a foto de perfil:</p>
-    <button>Escolher um arquivo</button> <p>Nenhum arquivo escolhido</p>
-    <button>Cadastrar</button>
     
+  <h2>Lista de Cupons</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Porcentagem do Desconto </th>
+        <th>Seção do Desconto</th>
+        <th>Data do Início da Validade</th>
+        <th>Válido até</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Desconto Dia do Gamer</td>
+        <td>20%</td>
+        <td>Toda a seção de games</td>
+        <td>28/08/25</td>
+        <td>30/08/25</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+      <tr>
+        <td>Desconto Dia do Livro</td>
+        <td>35%</td>
+        <td>Toda a seção de livros</td>
+        <td>22/04/25</td>
+        <td>30/04/25</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+   <tr>
+        <td>Desconto Nos Produtos Adidas</td>
+        <td>10%</td>
+        <td>Todos os produtos da marca Adidas</td>
+        <td>25/05/25</td>
+        <td>30/05/25</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+<tr>
+        <td>Desconto Natal Xhopii</td>
+        <td>50%</td>
+        <td>Todos os produtos da loja</td>
+        <td>25/12/25</td>
+        <td>26/12/25</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+<tr>
+   
+    </tbody>
+  </table>
+
 <footer style="background-color: #f8f8f8; padding: 40px 20px;">
   <section style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
     
@@ -121,5 +170,6 @@
 
 </section>
 </footer>
+
 </body>
 </html>

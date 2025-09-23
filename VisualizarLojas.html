@@ -5,7 +5,29 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title>Cadastro de Clientes</title>
+    <title>Tabela de Lojas</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
 </head>
 <body>
 
@@ -25,36 +47,67 @@
         </ul>
     </nav>
 
-    <h1>Cadastro de Clientes</h1>
-    <form action="/cadastrar" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
-
-        <label for="sobrenome">Sobrenome:</label><br>
-        <input type="text" id="sobrenome" name="sobrenome" required><br><br>
-
-        <label for="CPF">CPF:</label><br>
-        <input type="text" id="CPF" name="CPF" required><br><br>
-
-        <label for="data_nascimento">Data de Nascimento:</label><br>
-        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
-
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" required><br><br>
-
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="senha">Senha:</label><br>
-        <input type="password" id="senha" name="senha" required><br><br>
-
-        <input type="submit" value="Cadastrar">
-    </form>
-
-    <p>Selecione a foto de perfil:</p>
-    <button>Escolher um arquivo</button> <p>Nenhum arquivo escolhido</p>
-    <button>Cadastrar</button>
     
+  <h2>Lista de Clientes</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>CNPJ</th>
+        <th>Endereço</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>Telefone</th>
+        <th>E-mail</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lojão Paulista</td>
+        <td>00.623.904/0001-73</td>
+        <td>Avenida Pauista, Bela Vista, 12.459</td>
+        <td>São Paulo</td>
+        <td>(11) 95477-3612</td>
+        <td>lojaopaulista@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+      <tr>
+        <td>Papelaria Prudentina</td>
+        <td>00.789.564/0001-13</td>
+        <td>Avenida Manuel Goulart, Centro, 785</td>
+        <td>São Paulo</td>
+        <td>(18) 99142-3451</td>
+        <td>papelariaprudentina@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+    <tr>
+        <td>Manzardo Calçados</td>
+        <td>00.418.722/0001-73</td>
+        <td>Avenida Carlos Santana, Centro, 785</td>
+        <td>São Paulo</td>
+        <td>(13) 99847-0245</td>
+        <td>manzardocalcados@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+    </tr>
+<tr>
+        <td>Livraria Maceió</td>
+        <td>00.874.425/0001-53</td>
+        <td>Avenida Amélia Rosa, Ponta Verde, 1.412</td>
+        <td>Alagoas</td>
+        <td>(82) 91451-4108</td>
+        <td>livrariamaceio@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+    </tr>
+   
+    </tbody>
+  </table>
+
 <footer style="background-color: #f8f8f8; padding: 40px 20px;">
   <section style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
     
@@ -121,5 +174,6 @@
 
 </section>
 </footer>
+
 </body>
 </html>

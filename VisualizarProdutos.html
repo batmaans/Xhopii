@@ -5,7 +5,29 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title>Cadastro de Clientes</title>
+    <title>Tabela de Produtos</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
 </head>
 <body>
 
@@ -25,36 +47,62 @@
         </ul>
     </nav>
 
-    <h1>Cadastro de Clientes</h1>
-    <form action="/cadastrar" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
-
-        <label for="sobrenome">Sobrenome:</label><br>
-        <input type="text" id="sobrenome" name="sobrenome" required><br><br>
-
-        <label for="CPF">CPF:</label><br>
-        <input type="text" id="CPF" name="CPF" required><br><br>
-
-        <label for="data_nascimento">Data de Nascimento:</label><br>
-        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
-
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" required><br><br>
-
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="senha">Senha:</label><br>
-        <input type="password" id="senha" name="senha" required><br><br>
-
-        <input type="submit" value="Cadastrar">
-    </form>
-
-    <p>Selecione a foto de perfil:</p>
-    <button>Escolher um arquivo</button> <p>Nenhum arquivo escolhido</p>
-    <button>Cadastrar</button>
     
+  <h2>Lista de Clientes</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Fabricante</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+        <th>Quantidade</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Camiseta Adidas</td>
+        <td>Adidas</td>
+        <td>Camiseta da Marca Adidas</td>
+        <td>R$99,99</td>
+        <td>352</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+      <tr>
+        <td>Livro Moby Dick</td>
+        <td>Editora Cosac & Naify</td>
+        <td>Livro Moby Dick em Capa Dura</td>
+        <td>R$90,00</td>
+        <td>512</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+    <tr>
+        <td>Console Nintendo Switch</td>
+        <td>Nintendo</td>
+        <td>Console de Video-Game Nintendo Switch</td>
+        <td>R$2.5000,00</td>
+        <td>254</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+    </tr>
+<tr>
+        <td>Game Super Mario Galaxy 1+2</td>
+        <td>Nintendo</td>
+        <td>Jogo de Video-Game Super Mario Galaxy 1+2</td>
+        <td>R$350,00</td>
+        <td>180</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+    </tr>
+   
+    </tbody>
+  </table>
+
 <footer style="background-color: #f8f8f8; padding: 40px 20px;">
   <section style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
     
@@ -121,5 +169,6 @@
 
 </section>
 </footer>
+
 </body>
 </html>

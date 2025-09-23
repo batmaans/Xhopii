@@ -5,7 +5,29 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title>Cadastro de Clientes</title>
+    <title>Tabela de Funcionários</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
 </head>
 <body>
 
@@ -25,36 +47,77 @@
         </ul>
     </nav>
 
-    <h1>Cadastro de Clientes</h1>
-    <form action="/cadastrar" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
-
-        <label for="sobrenome">Sobrenome:</label><br>
-        <input type="text" id="sobrenome" name="sobrenome" required><br><br>
-
-        <label for="CPF">CPF:</label><br>
-        <input type="text" id="CPF" name="CPF" required><br><br>
-
-        <label for="data_nascimento">Data de Nascimento:</label><br>
-        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
-
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" required><br><br>
-
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="senha">Senha:</label><br>
-        <input type="password" id="senha" name="senha" required><br><br>
-
-        <input type="submit" value="Cadastrar">
-    </form>
-
-    <p>Selecione a foto de perfil:</p>
-    <button>Escolher um arquivo</button> <p>Nenhum arquivo escolhido</p>
-    <button>Cadastrar</button>
     
+  <h2>Lista de Clientes</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>CPF</th>
+        <th>Data de Nascimento</th>
+        <th>Cargo</th>
+        <th>Salário</th>
+        <th>Telefone</th>
+        <th>E-mail</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>João Paulo</td>
+        <td>Gomes</td>
+        <td>458.219.997-00</td>
+        <td>01/02/1983</td>
+        <td>Supervisor do T.I.</td>
+        <td>R$8.500,00</td>
+        <td>(11) 98742-4532</td>
+        <td>joaopaulo.silva@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+     <tr>
+        <td>Henrique</td>
+        <td>Ramos</td>
+        <td>547.419.073-60</td>
+        <td>06/06/1995</td>
+        <td>Desenvolvedor</td>
+        <td>R$4.500,00</td>
+        <td>(11) 9855-6400</td>
+        <td>henrique.ramos@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+        <tr>
+        <td>Victor</td>
+        <td>Galvão</td>
+        <td>423.518.793-50</td>
+        <td>30/05/1990</td>
+        <td>Cientista de Dados</td>
+        <td>R$5.000,00</td>
+        <td>(18) 98742-4532</td>
+        <td>victor.galvao@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+      </tr>
+ </tr>
+        <td>Adriano</td>
+        <td>Barros</td>
+        <td>167.410.329.20</td>
+        <td>30/08/1978</td>
+        <td>Supervisor de Segurança da Informação</td>
+        <td>R$7.000,00</td>
+        <td>(11) 9823-5452</td>
+        <td>victor.galvao@email.com</td>
+        <td><button>Editar</button></td>
+        <td><button>Excluir</button></td>
+</tr>
+   
+    </tbody>
+  </table>
+
 <footer style="background-color: #f8f8f8; padding: 40px 20px;">
   <section style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
     
@@ -121,5 +184,6 @@
 
 </section>
 </footer>
+
 </body>
 </html>
