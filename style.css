@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
+html, body {
+    overflow-x: hidden;
+}
 .produto-miniatura {
     list-style: none;
     padding: 0;
@@ -212,4 +215,51 @@ header img{
     font-weight: bold;
     color: rgb(251,86,48);
     background-color: rgb(255, 255, 255);
+}
+
+.rodapes{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: rgb(245, 245, 245);
+    line-height: 2;
+    padding: 40px 20px;
+}
+.redesImg li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.redesImg li img{
+    height: 30px;
+    width: 30px;
+}
+.pagamentos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+ul.pagamentos{
+    list-style: none;
+    padding: 0;
+}
+
+.pagamentos img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+footer a{
+    color: rgb(54, 54, 54);
+    text-decoration: none;  
+    color: inherit;
 }
