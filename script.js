@@ -47,3 +47,17 @@ function tamanhoSelecionado(tamanhoEscolhido){
         document.getElementById("tamanhoSelecionado").innerHTML = "Tamanho Selecionado: GG";
     }
 }
+
+const carousel = new bootstrap.Carousel('#myCarousel')
+document.addEventListener('DOMContentLoaded', function () {
+    const el = document.querySelector('#carouselExampleAutoplaying');
+    if (el && typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+        // opções: interval em ms (ex: 3000), wrap true/false, ride 'carousel' ou false
+        const carousel = new bootstrap.Carousel(el, {
+            interval: 3000,
+            ride: 'carousel',
+            pause: 'hover',
+            wrap: true
+        });
+    }
+});

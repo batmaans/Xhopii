@@ -6,6 +6,64 @@
 html, body {
     overflow-x: hidden;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: white;
+  opacity: 0.5;
+  transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+.carousel {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #fff;
+}
+
+.primeiraCompra {
+    width: 700px;
+    margin: 20px auto 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: none;
+}
+
+.primeiraCompra img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .produto-miniatura {
     list-style: none;
     padding: 0;
@@ -17,7 +75,7 @@ html, body {
     width: 60px;
 }
 header{
-    height: 85px;
+    height: 60px;
     width: 100%;
     background-color: rgb(251,86,48);
     display: flex;
@@ -32,15 +90,44 @@ header.corsec{
     background-color: rgb(211, 211, 211);
 }
 
-h2.corsec{
+h2.corsecProd{
     color: rgb(251,86,48);
     font-size: 25px;
+    text-align: left;
 }
+
+h2.corsecPages{
+    color: rgb(243, 243, 243);
+    font-size: 35px;
+    text-align: left;
+    margin: 40px auto 40px auto;
+    font-weight: bold;
+}
+
+h2.corsecProd{
+    color: rgb(251,86,48);
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
 h3.corsec{
     color: rgb(251,86,48);
     font-size: 18px;
     margin: 20%;
 }
+
+h3.corsecPages{
+    color: rgb(243, 243, 243);
+    font-size: 25px;
+    text-align: center;
+    margin-left: 50%;
+}
+a.corsecPages{
+    text-decoration: none;  
+    color: inherit;
+}
+
 h2.corterc{
     color: rgb(54, 54, 54);
     font-size: 25px;
@@ -239,6 +326,70 @@ footer{
     height: 30px;
     width: 30px;
 }
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1200px;  
+    margin: 20px auto;  
+    padding: 0 16px;
+    list-style: none;
+}
+
+.produto-item {
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+    min-height: 320px; 
+}
+
+.produto-item img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.produtosNome {
+    text-align: center;
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #111;
+    flex: 1 0 auto;
+}
+
+.produtos-meta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed #eee;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.produtosPreco {
+    font-weight: 700;
+    color: rgb(251,86,48);
+    font-size: 1.05rem;
+}
+
+.produtosEstoque {
+    font-weight: 500;
+    color: #7e7e7e;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
 .pagamentos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -246,6 +397,7 @@ footer{
     max-width: 300px;
     margin: auto;
 }
+
 ul.pagamentos{
     list-style: none;
     padding: 0;
