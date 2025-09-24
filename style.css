@@ -304,6 +304,35 @@ header img{
     background-color: rgb(255, 255, 255);
 }
 
+.menu-horizontal2 ul{
+    background-color: #FB772F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-horizontal2 ul li{
+    list-style: none;
+}
+
+.menu-horizontal2 ul li a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.menu-horizontal2 ul li a:hover{
+    font-weight: bold;
+    color: #FB772F;
+    background-color: rgb(255, 255, 255);
+}
+
 .rodapes{
     max-width: 1200px;
     margin: auto;
