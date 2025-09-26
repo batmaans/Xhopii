@@ -9,48 +9,102 @@
 </head>
 <body>
     
-    <header>
-        <img src="img/logo.png">
-        <h1>Xhopii</h1>
+    <header class="corsec">
+        <img class="logo" src="img/logo.png">
+        <h2 class="corsecProd"><a href="#">Xhopii</h2><h2 class="corterc">Login</h2><h3 class="corsec">Precisa de ajuda?</h3></a>
     </header>
-    <nav class="menu-horizontal">
-        <ul>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="cadastroCliente.php">Cadastro Cliente</a></li>
-            <li><a href="verCliente.php">Ver Clientes</a></li>
-        </ul>
-    </nav>
-    <div class="produto-imagem">
-        <div class="produto-miniatura">
-            <img src="img/produto1.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto2.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto3.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto4.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto5.png" onclick="selecionarImgProduto(this)">
+    
+        <div class="janRedSenha">
+            <h2 class="titulo">Login</h2>
+                <form class="formulario">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <button type="submit" class="botaoEnviar" style="font-size: 18px;">ENTRE</button>
+                 </form>
+            <nav>
+                <div class="produtos-meta" style="font-size: 14px; color: rgb(0, 128, 255);">
+                    <a href="RedefinirSenha.html">Esqueci minha senha</a>
+                    <a href="#">Fazer login com SMS</a>
+                </div>
+                <div class="linha-ou">
+                    <span>OU</span>
+                </div>
+                <nav class="redesLogin" style="list-style: none; padding: 0;">
+                    <button> <img src="img/logo-facebook-cicle.png" alt="FACEBOOK">Facebook</button>
+                    <button> <img src="img/logo-google.png" alt="GOOGLE">Google</button>
+                    <button> <img src="img/logo-apple.png" alt="APPLE">Apple</button>  
+                </nav>
+                    <p style="text-align: center; color: rgb(185, 185, 185);">Novo na Xhopii? <a style="color: rgb(251,86,48);" href="#">Cadastrar</a></p>
+            </nav>
         </div>
-        <div class="produto-principal">
-            <img id="imgPrincipal" src="img/produto1.png">
-        </div>
-    </div>
 
-    <div class="produto-detalhes">
-        <h1>Camisa Desenvolvedor Front-End CSS</h1>
-        <h2 id="precoProduto">R$56,90</h2>
-        <p id="qtdDisponivel" >2000 peças dísponíveis</p>
-        <p>Modelos:</p>
-        <button class="botao" id="btnModeloPreto" onclick="mudarPreco(this)">Preto</button>
-        <button class="botao" id="btnModeloAzul" onclick="mudarPreco(this)">Azul</button>
-        <button class="botao" id="btnModeloVerde" onclick="mudarPreco(this)">Verde</button>
-        <button class="botao" id="btnModeloCinza" onclick="mudarPreco(this)">Cinza</button>
-        <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
+<footer>
+  <section class="rodapes">
+    
+    <section>
+      <h4>Atendimento ao Cliente</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#">Central de Ajuda</a></li>
+        <li><a href="#">Como Comprar</a></li>
+        <li><a href="#">Métodos de Pagamento</a></li>
+        <li><a href="#">Garantia Xhopii</a></li>
+        <li><a href="#">Devolução e Reembolso</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="#">Ouvidoria</a></li>
+      </ul>
+    </section>
 
-        <p>Tamanhos:</p>
-        <button class="botao" id="btnTamanhoP">P</button>
-        <button class="botao" id="btnTamanhoM">M</button>
-        <button class="botao" id="btnTamanhoG">G</button>
-        <button class="botao" id="btnTamanhoGG">GG</button>
-        <p id="tamanhoSelecionado" >Tamanho Selecionado: P</p>
-        <button id="botaoComprar">Comprar Agora</button>
-    </div>
+    <section>
+      <h4>Sobre a Xhopii</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Políticas Xhopii</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+        <li><a href="#">Seja um Entregador Xhopii</a></li>
+        <li><a href="#">Ofertas Relâmpago</a></li>
+        <li><a href="#">Xhopii Blog</a></li>
+        <li><a href="#">Imprensa</a></li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h4>Pagamento</h4><br>
+      <ul class="pagamentos">
+        <li><img src="img/logo-pix.png" alt="PIX"></li>
+        <li><img src="img/logo-boleto.png" alt="Boleto"></li>
+        <li><img src="img/logo-american-express.png" alt="AMEX"></li>
+        <li><img src="img/logo-visa.png" alt="VISA"></li>
+        <li><img src="img/logo-mastercard.png" alt="MasterCard"></li>
+        <li><img src="img/logo-hipercard.png" alt="Hipercard"></li>
+        <li><img src="img/logo-elo.png" alt="ELO"></li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Siga-nos</h4><br>
+      <ul class="redesImg" style="list-style: none; padding: 0;">
+        <li><img src="img/logo-instagram.png" alt="Instagram"><a href="#">Instagram</a></li>
+        <li><img src="img/logo-twitter.png" alt="Twitter (X)"><a href="#">Twitter</a></li>
+        <li><img src="img/logo-facebook.png" alt="Facebook"><a href="#">Facebook</a></li>
+        <li><img src="img/logo-youtube.png" alt="Youtube"><a href="#">YouTube</a></li>
+        <li><img src="img/logo-linkedln.png" alt="LinkedIn"><a href="#">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Atendimento ao Cliente</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><img src="img/qr-code.png" alt="QRCODE"></li><br>
+        <li><img src="img/logo-google-play.png" alt="GooglePlay"></li><br>
+        <li><img src="img/logo-store-apple.png" alt=""></li>
+      </ul>
+    </section>
+
+  </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
