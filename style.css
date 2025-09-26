@@ -466,6 +466,10 @@ ul.pagamentos{
     margin: auto;
 }
 
+li a{
+    text-decoration: none;  
+    color: inherit;
+}
 footer a{
     color: rgb(54, 54, 54);
     text-decoration: none;  
